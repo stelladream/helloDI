@@ -7,6 +7,7 @@ public class PetOwner {
 
     @Autowired
     @Qualifier("qf_dog")
+
     public AnimalType animal;
 
 /*	public PetOwner(AnimalType animal) {

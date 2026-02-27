@@ -2,8 +2,6 @@ package kr.ac.hansung.cse.animals;
 
 import lombok.Setter;
 
-import java.io.Serial;
-
 public class Dog implements AnimalType {
 
     @Setter
