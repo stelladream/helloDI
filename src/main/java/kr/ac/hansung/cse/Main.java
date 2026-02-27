@@ -1,12 +1,12 @@
 package kr.ac.hansung.cse;
 
 import kr.ac.hansung.cse.animals.PetOwner;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("conf/animal.xml");
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(AppConfig.class);
 
         PetOwner person = (PetOwner) context.getBean("petOwnerId");
         person.play();
