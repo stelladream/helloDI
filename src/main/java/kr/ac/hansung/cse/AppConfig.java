@@ -1,5 +1,6 @@
 package kr.ac.hansung.cse;
 
+import kr.ac.hansung.cse.animals.Cat;
 import kr.ac.hansung.cse.animals.Dog;
 import kr.ac.hansung.cse.animals.PetOwner;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +14,13 @@ public class AppConfig {
         Dog dog = new Dog();
         dog.setMyName("poodle");
         return dog;
+    }
+
+    @Bean
+    public Cat catId() {
+        Cat cat = new Cat();
+        cat.setMyName("bella");
+        return cat;
     }
 
     @Bean

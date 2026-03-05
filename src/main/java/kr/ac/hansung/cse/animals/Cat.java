@@ -5,7 +5,7 @@ import lombok.Setter;
 public class Cat implements AnimalType {
 
     @Setter
-    String myName;
+    private String myName;
 
     public void sound() {
         System.out.println("Cat name =" + myName + ": " + "Meow!");
